@@ -1,0 +1,79 @@
+---
+title: "Nouvel utilisateur"
+preheader: "Un nouveau compte viens d'être créé"
+bodyClass: bg-slate-50
+---
+
+<x-main style="background-color: azure;">
+
+  <div class="bg-slate-50 sm:px-4 font-sans" style="font-family: cursive;">
+    <table align="center" >
+      <tr style="background-color: #D1CCBD;">
+        <td class="w-[600px] max-w-full">
+          <div class="my-12 sm:my-8 text-center">
+            <a href="#">
+              <img src="/images/Save.png" width="140" alt="Maizzle"  class="T">
+            </a>
+          </div>
+        </td>
+
+          <table class="w-full" style="width: 48rem;position: relative;" align="center">
+           <tr >
+              <td class="p-12 sm:px-6 text-base text-slate-700 bg-white rounded shadow-sm" >
+
+
+                <p class="m-0 leading-6" style="text-align: center;">
+                  <b style="text-transform:uppercase;color: red;">Notification concernant la platforme</b>
+                  <br><br>
+                  <h1 class="m-0 mb-6 text-2xl sm:leading-8 text-black font-semibold">
+                    Bonjour @{{$AdminName}},
+                  </h1>
+                  <br>
+
+                </p>
+                <h4 >
+                 Nouvel utilisateur enregistré : @{{$UserName}}, @{{UserMail}} cliquez sur le bouton ci-dessous pour voir la liste des utilisateurs
+                </h4>
+
+
+                <x-spacer height="24px" />
+
+                <x-button href="https://maizzle.com" style="background-color: rgb(235, 70, 70);margin-left: 4rem;">
+                  Voir la liste des utilisateurs &rarr;
+                </x-button>
+
+                <x-divider space-y="32px" class="bg-slate-200" />
+
+
+              </td>
+           </tr>
+
+           <table align="center" >
+            <tr style="background-color: #D1CCBD;">
+              <td class="w-[600px] max-w-full">
+                <div class="my-12 sm:my-8 text-center" style="color: black;height: 8rem;">
+                  <p class="m-0 mb-4 uppercase">
+                    Powered by SCI
+                  </p>
+
+                  <p class="m-0 italic">
+                    Quickly build HTML emails with Tailwind CSS
+                  </p>
+
+                  <p class="cursor-default" style="color: black;">
+                    <a href="https://maizzle.com/docs/" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Docs</a>
+                    &bull;
+                    <a href="https://github.com/maizzle" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Github</a>
+                    &bull;
+                    <a href="https://twitter.com/maizzlejs" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Twitter</a>
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</x-main>
